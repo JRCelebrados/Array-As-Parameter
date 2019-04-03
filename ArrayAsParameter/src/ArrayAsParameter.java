@@ -11,6 +11,23 @@ public class ArrayAsParameter {
 		int[] revA = reverseArray(A);
 		listArray2(revA);
 		
+		Stack stack = new Stack(10);
+		
+		stack.push(1);
+		stack.push(2);
+		stack.push(3);
+		stack.push(4);
+		stack.push(5);
+		stack.push(6);
+		stack.push(7);
+		stack.push(8);
+		
+		listStackArray(stack);
+		
+		sumOfArray(A);
+		
+		sumUpStack(stack);
+		
 	}
 	
 	public static void listArray (int x[]) {
@@ -34,6 +51,30 @@ public class ArrayAsParameter {
 			reverse[j] = x[i];
 		}
 		return reverse;
+		
+	}
+	
+	public static void listStackArray(Stack stack) {
+		
+		stack.show();
+		
+	}
+	
+	public static void sumOfArray(int[] ar) {
+		
+		int sum = 0;
+		
+		for(int i = 0; i < ar.length; i++) {
+			sum += ar[i];
+		}
+		
+		System.out.println("The sum of " + Arrays.toString(ar) + " is " +  + sum);
+		
+	}
+	
+	public static void sumUpStack(Stack stack) {
+		
+		stack.sumOfStack();
 		
 	}
 
