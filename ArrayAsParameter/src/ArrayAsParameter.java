@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ArrayAsParameter {
 	
@@ -27,6 +28,19 @@ public class ArrayAsParameter {
 		sumOfArray(A);
 		
 		sumUpStack(stack);
+		
+		Scanner input = new Scanner(System.in);
+		
+		int A2[] = new int[6];
+		
+		for(int i = 0; i < A2.length; i++) {
+			
+			System.out.println("Enter value: ");
+			A[i] = input.nextInt();
+			
+		}
+		
+		sumOfArray(A2);
 		
 	}
 	
